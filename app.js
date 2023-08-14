@@ -10,6 +10,10 @@ app.use(bodyParser.json())
 
 app.use("/api/user/", userRouter);
 
+app.get('/', (req, res) => {
+    res.send("Hello my dear devs....")
+})
+
 // app.get('/product/:id([0-9]+)', (req, res) => {
 //     const id = req.params.id;
 //     res.send(id);
