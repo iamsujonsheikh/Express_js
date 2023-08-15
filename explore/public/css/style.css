@@ -1,0 +1,11 @@
+h1 {
+    color: blue;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}

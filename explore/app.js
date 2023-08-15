@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-
+app.use(express.static("public"));
 
 app.use("/api/user/", userRouter);
 
@@ -14,9 +14,13 @@ app.get('/', (req, res) => {
     res.send("Hello my dear devs....")
 })
 
+app.get('/user', (req, res) => {
+    res.sendFile(__dirname + "/index.html")
+})
+
 // app.get('/product/:id([0-9]+)', (req, res) => {
-//     const id = req.params.id;
-//     res.send(id);
+//     const id = req.params.id;  
+//     res.send(id); 
 // })
 
 // app.use('*', (req, res) => {
