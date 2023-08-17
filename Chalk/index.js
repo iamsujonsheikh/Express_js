@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const chalk = require('chalk');
 
+// PORT defined.
 const PORT = 3000;
 
 // Get route.
