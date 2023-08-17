@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
-const multer = require('multer')
+const multer = require('multer');
 
+// Port defind.
 const PORT = 3000;
 
 // Multer pakage.
